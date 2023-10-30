@@ -2,16 +2,21 @@
 <html>
 
 <head>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.css" rel="stylesheet">
-
+    {{-- <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.css" rel="stylesheet"> --}}
+    <link rel='stylesheet' href='https://fullcalendar.io/releases/core/4.0.1/main.min.css'>
+    <link rel='stylesheet' href='https://fullcalendar.io/releases/timeline/4.0.1/main.min.css'>
+    <link rel='stylesheet' href='https://fullcalendar.io/releases/resource-timeline/4.0.1/main.min.css'>
 </head>
 
 <body>
     <div id='calendar'></div>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.js'></script>
+    <script src='https://fullcalendar.io/releases/core/4.0.1/main.min.js'></script>
+    <script src='https://fullcalendar.io/releases/interaction/4.0.1/main.min.js'></script>
+    <script src='https://fullcalendar.io/releases/timeline/4.0.1/main.min.js'></script>
+    <script src='https://fullcalendar.io/releases/resource-common/4.0.1/main.min.js'></script>
+    <script src='https://fullcalendar.io/releases/resource-timeline/4.0.1/main.min.js'></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var calendarEl = document.getElementById('calendar');
